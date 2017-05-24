@@ -911,18 +911,27 @@ As is true for modules, classes in Python do not put an absolute barrier between
 
 
 ```
-In [5]: sample_list = [3, 2, 1, 5, 4, 7, 8, 0, 6]
+import random
 
-In [8]: def bubblesort(x):
-   ...:     length = len(x)-1
-   ...:     for i in range(length):
-   ...:         for j in range(length-1):
-   ...:             if x[j] > x[j+1]:
-   ...:                 x[j], x[j+1] = x[j+1], x[j]
-   ...:     return x
-   ...: bubblesort(sample_list)
+source = [x for x in range(10)]
+random.shuffle(source)
 
+def bubblesort(x):
+    length = len(x)-1
 
+    for i in range(length):
+        for j in range(length -i):
+            if x[j] > x[j+1]:
+                x[j], x[j+1] = x[j+1], x[j]
+                # print(x)
+
+            # print(x)
+
+    return x
+
+bubblesort(source)
+
+print(source)
 ```
 
 ---
