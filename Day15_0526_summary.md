@@ -308,6 +308,8 @@ SSH는 암호화 기법을 사용하기 때문에, 통신이 노출된다 하더
 
 * 장고 트리보기
 	* `tree django`
+	
+![장고 트리](django_tree.jpg)
 
 ## gitignore.io
 * [https://www.gitignore.io/](https://www.gitignore.io/)
