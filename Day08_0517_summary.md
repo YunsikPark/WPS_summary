@@ -907,6 +907,8 @@ fruits =['apple','banana','melon']
 
 fruits=fruits_copy
 
+
+# copy 함수
 fruits_copy = fruits.copy()
 
 fruits[0]= 'asdf'
@@ -914,6 +916,14 @@ fruits[0]= 'asdf'
 fruits =['asdf','banana','melon']
 
 fruits_copy = ['apple','banana','melon']
+
+
+# list함수
+fruits_copy = list(fruits)
+
+# 슬라이스 연산[:]
+fruits_copy = fruits[:]
+
 ```
 
 
