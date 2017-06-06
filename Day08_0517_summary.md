@@ -1069,11 +1069,6 @@ com_dict.clear()
 
 ```
 
-일부삭제
-
-```
-champion_dict['Sona']
-```
 
 #### in으로 키 검색
 
