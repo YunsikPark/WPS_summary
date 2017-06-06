@@ -883,8 +883,16 @@ True
 
 #### 정렬하기 (sort, sorted)
 
-- sort는 리스트 자체를 정렬		//원래있던 것의 소스를 바꿔버림
+- sort는 리스트 자체를 정렬 		//원래있던 것의 소스를 바꿔버림
 - sorted는 리스트의 정렬 복사본을 반환		//원래 있던 소스를 건들지 않음 
+
+```
+l = 'a d c d e'.split()
+
+sort : l.sort()
+sorted : sorted(l)
+
+```
 
 
 #### 리스트 복사 (copy)
