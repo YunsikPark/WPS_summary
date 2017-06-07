@@ -287,10 +287,15 @@ SSH는 암호화 기법을 사용하기 때문에, 통신이 노출된다 하더
 * `mkdir .ssh`
 * 공개키 설정
 	* `ssh-keygen -t rsa -b 4096 -C "your_email@example.com"`
+	* 위의 이메일은 깃헙 이메일을 적는다
+	* 또한 위의 명령을 치면 몇가지 물어보는데 전부 enter를 쳐서 넘어간다.
 * 공개키 보기
 	* `cat id_rsa.pub`
+	* 위의 명령을 .ssh 폴더에서 치면 나의 공개키가 나온다.
 * GIT SSH 설정
+	* `cat id_rsa.pub`명령을 통해 얻은 공개키를 복사한 후
 	* settings -> SSH and GPG keys -> New SSH Key > 에 위의 공개키 붙여넣기
+	* 그리고 title을 적어준 뒤 add SSH 해준다.
 * Git 폴더의 SSH 주소 복사
 
 ## djangogirls 작업폴더 Git 설정

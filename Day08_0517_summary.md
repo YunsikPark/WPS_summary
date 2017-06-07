@@ -883,8 +883,16 @@ True
 
 #### 정렬하기 (sort, sorted)
 
-- sort는 리스트 자체를 정렬		//원래있던 것의 소스를 바꿔버림
+- sort는 리스트 자체를 정렬 		//원래있던 것의 소스를 바꿔버림
 - sorted는 리스트의 정렬 복사본을 반환		//원래 있던 소스를 건들지 않음 
+
+```
+l = 'a d c d e'.split()
+
+sort : l.sort()
+sorted : sorted(l)
+
+```
 
 
 #### 리스트 복사 (copy)
@@ -899,6 +907,8 @@ fruits =['apple','banana','melon']
 
 fruits=fruits_copy
 
+
+# copy 함수
 fruits_copy = fruits.copy()
 
 fruits[0]= 'asdf'
@@ -906,6 +916,14 @@ fruits[0]= 'asdf'
 fruits =['asdf','banana','melon']
 
 fruits_copy = ['apple','banana','melon']
+
+
+# list함수
+fruits_copy = list(fruits)
+
+# 슬라이스 연산[:]
+fruits_copy = fruits[:]
+
 ```
 
 
@@ -1051,11 +1069,6 @@ com_dict.clear()
 
 ```
 
-일부삭제
-
-```
-champion_dict['Sona']
-```
 
 #### in으로 키 검색
 
